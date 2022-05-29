@@ -19,3 +19,19 @@ let result = (n) => {
     return console.log(n);
 };
 console.log(result([176, 156, 155, 165, 166, 169]));
+
+const unsorted = prompt("키를 입력하세요");
+let sorted = "";
+
+sorted = unsorted
+    .split(" ")
+    .sort(function (a, b) {
+        return a - b;
+    })
+    .join(" ");
+
+if (unsorted === sorted) {
+    console.log("Yes");
+} else {
+    console.log("No");
+}
