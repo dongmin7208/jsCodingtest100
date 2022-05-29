@@ -6,9 +6,9 @@
 키가 150이 넘으면 **YES**를 틀리면 **NO**를 출력하는 프로그램을 작성하세요.
  */
 function keylimite(s) {
-    if (s <= 150) {
+    if (s >= 150) {
         return console.log("yes");
     } else console.log("no");
 }
 
-keylimite(149);
+keylimite(151);
