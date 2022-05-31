@@ -1,0 +1,32 @@
+/*
+# 문제45 : getTime()함수 사용하기
+
+Date객체의 메소드 중 하나인 getTime()은 1970년 1월 1일 0시 0분 0초 이후로부터 지금까지 흐른 시간을 천분의 1초 단위(ms)로 반환합니다.
+
+이를 이용하여 **현재 연도(2019)를 출력해보세요.**
+ */
+
+function dec(year, month, day) {
+    let dayday = new Date(year, month, day);
+    let copy = new Date();
+    copy.setTime(dayday.getTime());
+    return copy;
+}
+console.log(dec(2022, 6, 1));
+
+let end, start;
+
+start = new Date();
+for (let i = 0; i < 1000; i++) {
+    Math.sqrt(i);
+}
+end = new Date();
+
+console.log("Operation took " + (end.getTime() - start.getTime()) + " msec");
+
+const d = new Date();
+
+let year = d.getTime();
+year = Math.floor(year / (3600 * 24 * 365 * 1000)) + 1970;
+
+console.log(year);
