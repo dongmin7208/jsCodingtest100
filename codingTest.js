@@ -125,9 +125,38 @@
 //     }
 // }
 
-for (let i = 847213569; i > 0; i--) {
-    if (Math.sqrt(i) % 1 === 0) {
-        console.log(i)
-        break;
+// for (let i = 847213569; i > 0; i--) {
+//     if (Math.sqrt(i) % 1 === 0) {
+//         console.log(i)
+//         break;
+//     }
+// }
+
+
+function sim() {
+    let sum = 0;
+    for (let i = 1; i < 3001; i++) {
+        if (i % 3 == 0) {
+            sum += i;
+        } else if (i > 99 && i < 1000) {
+            sum += i;
+        } else if (check(i)) {
+            sum += i;
+        }
     }
+    console.log(sum)
 }
+
+function check(x) {
+    let tmp = String(x);
+    // console.log(tmp);
+    for (x in tmp) {
+        // console.log("x: ", x)
+        if (tmp[x] == "3") {
+            return true;
+        }
+    }
+    return false;
+}
+// console.log(sim())
+sim()
