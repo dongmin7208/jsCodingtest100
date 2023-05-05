@@ -4,5 +4,6 @@
 var nums = [100, 200, 300, 400, 500];
 
 nums.splice(3, 2);
-
+// nums.pop(); //500
+// nums.pop(); //400
 console.log(nums);
