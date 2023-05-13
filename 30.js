@@ -1,3 +1,8 @@
+const data = "문자열을 입력하세요";
+const word = "찾을 단어를 입력하세요";
+
+console.log(data.indexOf(word));
+
 /*
     문자열 속 문자 찾기
 
@@ -8,7 +13,7 @@
 
  */
 function moji([s, b]) {
-    console.log(s.indexOf(b));
+  console.log(s.indexOf(b));
 }
 
 moji(["pineapple", "apple"]);
