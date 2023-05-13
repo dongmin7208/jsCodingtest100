@@ -1,13 +1,16 @@
-/*
-입출력
+let str = "park";
 
-입력 : 거꾸로
-출력 : 로꾸거
- */
+console.log(str.split("").reverse().join(""));
+// /*
+// 입출력
 
-function rokuko(s) {
-    const reverseString = s.split("").reverse().join("");
-    return console.log(reverseString);
-}
+// 입력 : 거꾸로
+// 출력 : 로꾸거
+//  */
 
-rokuko("abcd");
+// function rokuko(s) {
+//     const reverseString = s.split("").reverse().join("");
+//     return console.log(reverseString);
+// }
+
+// rokuko("abcd");
