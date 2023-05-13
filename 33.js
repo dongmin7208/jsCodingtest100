@@ -1,3 +1,13 @@
+const nums = [1, 2, 3, 4, 5];
+const nums2 = "1 2 3 4 5";
+const arr = nums2.split(" ").reverse();
+let reverseVal = "";
+console.log(arr);
+
+for (let i = 0; i < arr.length; i++) {
+  reverseVal += arr[i];
+}
+console.log("koko", reverseVal);
 /*
 한 줄에 여러개의 숫자가 입력되면, 역순으로 그 숫자들을 하나씩 출력하는 프로그램을 작성하시오.
 
@@ -36,16 +46,16 @@
 // console.log(reverseInt.n);
 
 const reverseInt = function reverseInt(s) {
-    const data = Math.abs(s).toString();
-    const result = +data
-        .split("")
-        .reverse()
-        .reduce((a, b) => a + b);
-    if (s < 0) {
-        return -result;
-    } else {
-        return result;
-    }
+  const data = Math.abs(s).toString();
+  const result = +data
+    .split("")
+    .reverse()
+    .reduce((a, b) => a + b);
+  if (s < 0) {
+    return -result;
+  } else {
+    return result;
+  }
 };
 console.log(reverseInt(12345));
 console.log(reverseInt(-54321));

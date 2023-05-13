@@ -14,24 +14,29 @@
 출력 : YES
  */
 
-let result = (n) => {
-    n.sort();
-    return console.log(n);
-};
-console.log(result([176, 156, 155, 165, 166, 169]));
-
-const unsorted = prompt("키를 입력하세요");
-let sorted = "";
-
-sorted = unsorted
-    .split(" ")
-    .sort(function (a, b) {
-        return a - b;
-    })
-    .join(" ");
-
-if (unsorted === sorted) {
-    console.log("Yes");
-} else {
-    console.log("No");
+function sort(arr) {
+  let result = arr.sort((a, b) => a - b);
+  return result;
 }
+
+// let result = (n) => {
+//     n.sort();
+//     return console.log(n);
+// };
+// console.log(result([176, 156, 155, 165, 166, 169]));
+
+// const unsorted = prompt("키를 입력하세요");
+// let sorted = "";
+
+// sorted = unsorted
+//     .split(" ")
+//     .sort(function (a, b) {
+//         return a - b;
+//     })
+//     .join(" ");
+
+// if (unsorted === sorted) {
+//     console.log("Yes");
+// } else {
+//     console.log("No");
+// }
