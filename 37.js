@@ -9,6 +9,41 @@
     혜원(이)가 총 4표로 반장이 되었습니다.
  */
 
+let s = [
+  "원범",
+  "원범",
+  "혜원",
+  "혜원",
+  "혜원",
+  "혜원",
+  "유진",
+  "유진",
+  "원범",
+  "원범",
+  "혜원",
+  "혜원",
+  "혜원",
+  "혜원",
+  "유진",
+  "유진",
+];
+let result = {};
+let winner = "";
+
+for (let index in s) {
+  let value = s[index];
+  result[value] =
+    result[value] === undefined ? 1 : (result[value] = result[value] + 1);
+}
+console.log(result);
+
+winner = Object.keys(result).reduce(function (a, b) {
+  console.log(a, b);
+  return result[a] > result[b] ? a : b;
+});
+
+console.log(winner);
+console.log(`${winner}가 총 ${winner[]}로 반장이 되었습니다.`);
 // function banzang(s) {
 //     let result = {};
 //     let winner = "";
